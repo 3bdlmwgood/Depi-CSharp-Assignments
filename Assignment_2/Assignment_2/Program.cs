@@ -247,6 +247,33 @@ class Program
 
         #endregion
 
+
+        #region Q15
+
+        int startNum = TakeValidInteger();
+        int endNum = TakeValidInteger();
+
+        for (int TheNumber = startNum; TheNumber <= endNum; TheNumber++)
+        {
+            if (TheNumber < 2)
+                continue;
+
+            bool isPrime = true;
+
+            for (int i = 2; i < TheNumber; i++)
+            {
+                if (TheNumber % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime)
+                Console.Write(TheNumber + " ");
+        }
+
+        #endregion
     }
 
     static int TakeValidInteger()
