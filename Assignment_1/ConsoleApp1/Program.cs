@@ -132,7 +132,7 @@ class Program
             Console.WriteLine(--Num + z-- + " " + --z);
 
         // ++Num increments Num to (2) , z++ uses the current value of z (5) and then increments it to 6, ++z increments z to (7) before using it.
-        // So the output will be "2 + 5    7" which is "7  7".
+        // So the output will be "2 + 5   7" which is "7  7".
 
         #endregion
     }
