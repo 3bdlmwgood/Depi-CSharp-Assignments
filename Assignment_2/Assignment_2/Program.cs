@@ -274,6 +274,29 @@ class Program
         }
 
         #endregion
+
+
+        #region Q16
+
+        int numberToBinary = TakeValidInteger();
+
+        int binary = 0;
+        int multiplier = 1;
+
+        while (numberToBinary > 0)
+        {
+            int remainder = numberToBinary % 2;
+            binary += remainder * multiplier;
+            numberToBinary /= 2;
+            multiplier *= 10;
+        }
+
+        Console.WriteLine($"Binary: {binary}");
+
+        #endregion
+
+
+        
     }
 
     static int TakeValidInteger()
