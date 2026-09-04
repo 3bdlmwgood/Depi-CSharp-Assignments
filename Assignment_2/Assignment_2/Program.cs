@@ -614,7 +614,23 @@ class Program
         #endregion
 
 
+        #region Q28
 
+        int ODArraySize = TakeValidInteger("Enter size of the array: ");
+
+        int[] ODArray = new int[ODArraySize];
+
+        for (int i = 0; i < ODArray.Length; i++)
+        {
+            ODArray[i] = TakeValidInteger($"Enter element {i + 1}: ");
+        }
+
+        for(int i = ODArray.Length - 1; i >= 0; i--)
+        {
+            Console.Write(ODArray[i] + " ");
+        }
+
+        #endregion
 
     }
 
