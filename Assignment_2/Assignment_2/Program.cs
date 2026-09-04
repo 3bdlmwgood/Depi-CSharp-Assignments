@@ -111,6 +111,19 @@ class Program
 
         #endregion
 
+
+        #region Q8
+
+        int numm = TakeValidInteger();
+
+        for (int i = 1; i <= numm; i++)
+        {
+            if (i % 2 == 0)
+                Console.Write(i + " ");
+        }
+
+        #endregion
+
     }
 
     static int TakeValidInteger()
