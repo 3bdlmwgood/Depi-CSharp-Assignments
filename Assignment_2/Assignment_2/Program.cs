@@ -137,7 +137,25 @@ class Program
         #endregion
 
 
+        #region Q10
 
+        int m1 = TakeValidInteger();
+        int m2 = TakeValidInteger();
+        int m3 = TakeValidInteger();
+        int m4 = TakeValidInteger();
+        int m5 = TakeValidInteger();
+
+        int total = m1 + m2 + m3 + m4 + m5;
+
+        int average = total / 5;
+
+        int percentage = (total * 100) / 500;
+
+        Console.WriteLine($"Total = {total}");
+        Console.WriteLine($"Average = {average}");
+        Console.WriteLine($"Percentage = {percentage}%");
+
+        #endregion
 
     }
 
