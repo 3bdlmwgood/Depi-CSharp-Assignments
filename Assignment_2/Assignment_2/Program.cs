@@ -487,6 +487,42 @@ class Program
 
         #endregion
 
+
+        #region Q24
+
+        int NewArraySize = TakeValidInteger("Enter Array Size : ");
+
+        int[] NewArr = new int[NewArraySize];
+
+        for (int i = 0; i < NewArraySize; i++)
+        {
+            NewArr[i] = TakeValidInteger("Enter element " + (i + 1) + ": ");
+        }
+
+        int largest = int.MinValue;
+        int secondLargest = int.MinValue;
+
+
+        for (int i = 0; i < NewArraySize; i++)
+        {
+            if (NewArr[i] > largest)
+            {
+                secondLargest = largest;
+                largest = NewArr[i];
+            }
+            else if (NewArr[i] > secondLargest && NewArr[i] != largest)
+            {
+                secondLargest = NewArr[i];
+            }
+        }
+
+        Console.WriteLine($"Second Largest = {secondLargest}");
+
+        #endregion
+
+
+
+
     }
 
     static int TakeValidInteger()
