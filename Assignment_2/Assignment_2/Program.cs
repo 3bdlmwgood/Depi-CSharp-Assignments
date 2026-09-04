@@ -372,6 +372,30 @@ class Program
 
         #endregion
 
+
+
+
+        #region Q20
+
+        int ArraySize = TakeValidInteger("Enter the size of the array: ");
+
+        int[] numbers = new int[ArraySize];
+
+        int sum = 0;
+
+        for (int i = 0; i < ArraySize; i++)
+        {
+            numbers[i] = TakeValidInteger($"Enter number {i + 1}: ");
+            sum += numbers[i];
+        }
+
+        Console.WriteLine($"Sum: {sum}");
+
+        #endregion
+
+
+
+
     }
 
     static int TakeValidInteger()
