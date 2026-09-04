@@ -316,7 +316,7 @@ class Program
         int x3 = TakeValidInteger("Enter x3: ");
         int y3 = TakeValidInteger("Enter y3: ");
 
-        if ((y2  - y1)  * (x3 -x2) == (y3 - y2) * (x2 - x1))
+        if ((y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1))
             Console.WriteLine("The points lie on a single straight line.");
         else
             Console.WriteLine("The points are not lie on a single straight line.");
@@ -353,7 +353,24 @@ class Program
         #endregion
 
 
+        #region Q19
         
+        int N = TakeValidInteger("Enter N: ");
+
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = 0; j < N; j++)
+            {
+                if (i == j)
+                    Console.Write("1 ");
+                else
+                    Console.Write("0 ");
+            }
+
+            Console.WriteLine();
+        }
+
+        #endregion
 
     }
 
