@@ -457,6 +457,36 @@ class Program
 
         #endregion
 
+        
+        
+        #region Q23
+
+        int arrSize = TakeValidInteger("Enter Array Size : ");
+
+        int[] Arr = new int[arrSize];
+
+        for (int i = 0; i < arrSize; i++)
+        {
+            Arr[i] = TakeValidInteger("Enter element " + (i + 1) + ": ");
+        }
+
+        int Max = Arr[0];
+        int Min = Arr[0];
+
+        for (int i = 1; i < arrSize; i++)
+        {
+            if (Arr[i] > Max)
+                Max = Arr[i];
+
+            if (Arr[i] < Min)
+                Min = Arr[i];
+        }
+
+        Console.WriteLine($"Maximum = {Max}");
+        Console.WriteLine($"Minimum = {Min}");
+
+        #endregion
+
     }
 
     static int TakeValidInteger()
