@@ -157,6 +157,36 @@ class Program
 
         #endregion
 
+
+        #region Q11
+
+        int month = TakeValidInteger();
+
+        switch (month)
+        {
+            case 4: case 6: case 9: case 11:
+                Console.WriteLine("Days in Month: 30");
+                break;
+            
+            case 1:case 3:case 5:case 7:case 8:case 10:case 12:
+                Console.WriteLine("Days in Month: 31");
+                break;
+            
+            case 2:
+                Console.WriteLine("Days in Month: 28 / 29");
+                break;
+            
+            default:
+                Console.WriteLine("Invalid month");
+                break;
+        }
+
+
+        #endregion
+
+
+
+
     }
 
     static int TakeValidInteger()
