@@ -124,6 +124,21 @@ class Program
 
         #endregion
 
+
+        #region Q9
+            
+        int num1 = TakeValidInteger();
+        int num2 = TakeValidInteger();
+
+        int powerResult = (int)Math.Pow(num1, num2);
+
+        Console.WriteLine(powerResult);
+
+        #endregion
+
+
+
+
     }
 
     static int TakeValidInteger()
