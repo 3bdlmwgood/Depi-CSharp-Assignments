@@ -29,5 +29,17 @@ class Program
         Console.WriteLine(num); // This will throw a FormatException because the string cannot be converted to an integer.
 
         #endregion
+
+
+        #region Q3
+
+        float point = 3.14f;
+        float point2 = 2.71f;
+
+        float sum = point + point2;
+
+        Console.WriteLine(sum); // This will output the sum of the two float numbers.
+
+        #endregion
     }
 }
