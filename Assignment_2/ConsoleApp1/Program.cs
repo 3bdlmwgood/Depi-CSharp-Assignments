@@ -85,6 +85,20 @@ class Program
 
         #endregion
 
+
+        #region Q7
+
+        Console.Write("Enter String 1 : ");
+        string str1 = Console.ReadLine();
+        Console.Write("Enter String 2 : ");
+        string str2 = Console.ReadLine();
+
+        string AllStr = str1 + " " + str2;
+
+        Console.WriteLine(AllStr);
+
+        #endregion
+
     }
 
     class Person
