@@ -59,6 +59,20 @@ class Program
 
         #endregion
 
+
+
+        #region Q4
+
+        int integer = TakeValidInteger();
+
+        if (integer % 2 == 0)
+            Console.WriteLine("Even");
+        else
+            Console.WriteLine("Odd");
+
+
+        #endregion
+
     }
 
     static int TakeValidInteger()
