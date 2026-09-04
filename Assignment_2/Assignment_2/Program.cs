@@ -373,8 +373,6 @@ class Program
         #endregion
 
 
-
-
         #region Q20
 
         int ArraySize = TakeValidInteger("Enter the size of the array: ");
@@ -395,6 +393,34 @@ class Program
 
 
 
+        #region Q21
+
+        int[] arr1 = { 5, 2, 7, 10, 9 };
+        int[] arr2 = { 3, 6, 1, 8, 4 };
+
+        Array.Sort(arr1);
+        Array.Sort(arr2);
+
+        int[] mergedArray = new int[arr1.Length + arr2.Length];
+
+        for (int i = 0; i < arr1.Length; i++)
+        {
+            mergedArray[i] = arr1[i];
+        }
+
+        for (int i = 0; i < arr2.Length; i++)
+        {
+            mergedArray[arr1.Length + i] = arr2[i];
+        }
+
+        Array.Sort(mergedArray);
+
+        foreach (int NUM in mergedArray)
+        {
+            Console.Write(NUM + " ");
+        }
+
+        #endregion
 
     }
 
