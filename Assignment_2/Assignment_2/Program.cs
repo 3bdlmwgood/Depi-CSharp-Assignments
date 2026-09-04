@@ -422,6 +422,41 @@ class Program
 
         #endregion
 
+
+        #region Q22
+
+        int size = TakeValidInteger("Enter Array Size : ");
+
+        int[] arr = new int[size];
+
+        for (int i = 0; i < size   ; i++)
+        {
+            arr[i] = TakeValidInteger($"Enter element {i + 1}: ");
+        }
+
+        bool[] visited = new bool[size];
+
+        for (int i = 0; i < size; i++)
+        {
+            if (visited[i])
+                continue;
+
+            int count = 1;
+
+            for (int j = i + 1; j < size; j++)
+            {
+                if (arr[i] == arr[j])
+                {
+                    count++;
+                    visited[j] = true;
+                }
+            }
+
+            Console.WriteLine($"{arr[i]} occurs {count} time(s)");
+        }
+
+        #endregion
+
     }
 
     static int TakeValidInteger()
