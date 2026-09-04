@@ -231,6 +231,22 @@ class Program
         #endregion
 
 
+        #region Q14
+
+        int integerToRevers = TakeValidInteger();
+        int reversed = 0;
+
+        while (integerToRevers != 0)
+        {
+            int digit = integerToRevers % 10;
+            reversed = reversed * 10 + digit;
+            integerToRevers /= 10;
+        }
+
+        Console.WriteLine($"Reversed: {reversed}");
+
+        #endregion
+
     }
 
     static int TakeValidInteger()
