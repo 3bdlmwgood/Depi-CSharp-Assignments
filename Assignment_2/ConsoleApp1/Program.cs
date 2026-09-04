@@ -52,5 +52,19 @@ class Program
         Console.WriteLine(substring); // This will output the first 8 characters of the string.
 
         #endregion
+
+        #region Q5
+
+        int num1 = 5;
+        int num2 = num1;
+
+        num1 = 20;
+
+        Console.WriteLine(num1);
+        Console.WriteLine(num2); // This will output 20 and 5, demonstrating that num2 is a copy of num1 and not affected by the change to num1.
+
+        #endregion
+
+
     }
 }
