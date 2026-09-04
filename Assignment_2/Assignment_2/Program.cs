@@ -24,6 +24,29 @@ class Program
         #endregion
 
 
+        #region Q2
+
+        int num;
+        bool isvalid = false;
+
+        do
+        {
+            Console.Write("Enter a number: ");
+            isvalid = int.TryParse(Console.ReadLine(), out num);
+        }
+        while (!isvalid);
+
+        if (num < 0)
+            Console.WriteLine("Negative");
+        else
+            Console.WriteLine("Positive");
+
+
+        #endregion
+
+
+
+
 
     }
 }
