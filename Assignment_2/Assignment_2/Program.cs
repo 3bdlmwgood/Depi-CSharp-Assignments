@@ -88,6 +88,20 @@ class Program
         #endregion
 
 
+        #region Q6
+
+        int n = TakeValidInteger();
+
+        for (int i = 1; i <= n; i++)
+                    {
+            Console.Write(i + " ");
+        }
+
+        #endregion
+
+
+
+
     }
 
     static int TakeValidInteger()
