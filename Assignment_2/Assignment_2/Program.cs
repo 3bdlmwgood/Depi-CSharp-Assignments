@@ -100,7 +100,16 @@ class Program
         #endregion
 
 
+        #region Q7
 
+        int numb = TakeValidInteger();
+
+        for (int i = 1;i <= 12; i++)
+        {
+            Console.Write(i*numb + " ");
+        }
+
+        #endregion
 
     }
 
