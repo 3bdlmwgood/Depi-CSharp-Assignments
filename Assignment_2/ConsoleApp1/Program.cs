@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 class Program
 {
@@ -60,11 +61,34 @@ class Program
 
         num1 = 20;
 
+        Console.WriteLine(num1.GetHashCode());
+        Console.WriteLine(num2.GetHashCode());
+
+
         Console.WriteLine(num1);
         Console.WriteLine(num2); // This will output 20 and 5, demonstrating that num2 is a copy of num1 and not affected by the change to num1.
 
         #endregion
 
 
+        #region Q6
+
+        Person person1 = new Person();
+        person1.Name = "Abdallah";
+
+        Person person2 = person1;
+
+        person2.Name = "Mohamed";
+
+        Console.WriteLine(person1.Name);
+        Console.WriteLine(person2.Name); // This will output "Mohamed" for both person1 and person2, demonstrating that they reference the same object in memory.
+
+        #endregion
+
+    }
+
+    class Person
+    {
+        public string Name { get; set; }
     }
 }
