@@ -185,6 +185,38 @@ class Program
         #endregion
 
 
+        #region Q12
+
+        int FirstNum = TakeValidInteger();
+        Console.Write("Enter an operator (+, -, *, /): ");
+        char operation = char.Parse(Console.ReadLine());
+        int secondNum = TakeValidInteger();
+
+        switch (operation)
+        {
+            case '+':
+                Console.WriteLine($"Result = {FirstNum + secondNum}");
+                break;
+            case '-':
+                Console.WriteLine($"Result = {FirstNum - secondNum}");
+                break;
+            case '*':
+                Console.WriteLine($"Result = {FirstNum * secondNum}");
+                break;
+            case '/':
+                if (secondNum != 0)
+                    Console.WriteLine($"Result = {FirstNum / secondNum}");
+                else
+                    Console.WriteLine("Error: Division by zero");
+                break;
+            default:
+                Console.WriteLine("Invalid operation");
+                break;
+        }
+
+        #endregion
+
+
 
 
     }
