@@ -15,7 +15,7 @@ class Program
             isValidInput = int.TryParse(Console.ReadLine(), out number);
         }
         while (!isValidInput);
-        
+
         if (number % 3 == 0 && number % 4 == 0)
             Console.WriteLine("Yes");
         else
@@ -93,7 +93,7 @@ class Program
         int n = TakeValidInteger();
 
         for (int i = 1; i <= n; i++)
-                    {
+        {
             Console.Write(i + " ");
         }
 
@@ -104,9 +104,9 @@ class Program
 
         int numb = TakeValidInteger();
 
-        for (int i = 1;i <= 12; i++)
+        for (int i = 1; i <= 12; i++)
         {
-            Console.Write(i*numb + " ");
+            Console.Write(i * numb + " ");
         }
 
         #endregion
@@ -126,7 +126,7 @@ class Program
 
 
         #region Q9
-            
+
         int num1 = TakeValidInteger();
         int num2 = TakeValidInteger();
 
@@ -164,18 +164,27 @@ class Program
 
         switch (month)
         {
-            case 4: case 6: case 9: case 11:
+            case 4:
+            case 6:
+            case 9:
+            case 11:
                 Console.WriteLine("Days in Month: 30");
                 break;
-            
-            case 1:case 3:case 5:case 7:case 8:case 10:case 12:
+
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
                 Console.WriteLine("Days in Month: 31");
                 break;
-            
+
             case 2:
                 Console.WriteLine("Days in Month: 28 / 29");
                 break;
-            
+
             default:
                 Console.WriteLine("Invalid month");
                 break;
@@ -296,7 +305,23 @@ class Program
         #endregion
 
 
-        
+        #region Q17
+
+        int x1 = TakeValidInteger("Enter x1: ");
+        int y1 = TakeValidInteger("Enter y1: ");
+
+        int x2 = TakeValidInteger("Enter x2: ");
+        int y2 = TakeValidInteger("Enter y2: ");
+
+        int x3 = TakeValidInteger("Enter x3: ");
+        int y3 = TakeValidInteger("Enter y3: ");
+
+        if ((y2  - y1)  * (x3 -x2) == (y3 - y2) * (x2 - x1))
+            Console.WriteLine("The points lie on a single straight line.");
+        else
+            Console.WriteLine("The points are not lie on a single straight line.");
+
+        #endregion
     }
 
     static int TakeValidInteger()
@@ -311,6 +336,19 @@ class Program
         }
         while (!isvalid);
 
+        return num;
+    }
+
+    static int TakeValidInteger(string Message)
+    {
+        int num;
+        bool isvalid = false;
+        do
+        {
+            Console.Write(Message);
+            isvalid = int.TryParse(Console.ReadLine(), out num);
+        }
+        while (!isvalid);
         return num;
     }
 
