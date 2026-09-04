@@ -103,9 +103,21 @@ class Program
         #region Q8
 
         int d;
-        d = Convert.ToInt32(!(30 < 20)); // A value 1 will be assigned to d.
+        d = Convert.ToInt32(!(30 < 20));
 
         Console.WriteLine(d);
+
+        //(30 < 20) is false, so !(30 < 20) is true, and Convert.ToInt32(true) returns 1.
+        //Correct Answer : A value 1 will be assigned to d.
+
+        #endregion
+
+
+        #region Q9
+
+        Console.WriteLine(13 / 2 + " " + 13 % 2);
+
+        // 13 / 2 is 6 (integer division), and 13 % 2 is 1 (remainder). So the output will be "6 1".
 
         #endregion
 
