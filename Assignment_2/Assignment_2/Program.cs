@@ -45,8 +45,35 @@ class Program
         #endregion
 
 
+        #region Q3
 
+        int n1 = TakeValidInteger();
+        int n2 = TakeValidInteger();
+        int n3 = TakeValidInteger();
 
+        int max = Math.Max(n1, Math.Max(n2, n3));
+        int min = Math.Min(n1, Math.Min(n2, n3));
+
+        Console.WriteLine($"Max Element = {max}");
+        Console.WriteLine($"Min Element = {min}");
+
+        #endregion
 
     }
+
+    static int TakeValidInteger()
+    {
+        int num;
+        bool isvalid = false;
+
+        do
+        {
+            Console.Write("Enter a number: ");
+            isvalid = int.TryParse(Console.ReadLine(), out num);
+        }
+        while (!isvalid);
+
+        return num;
+    }
+
 }
