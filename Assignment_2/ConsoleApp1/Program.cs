@@ -99,6 +99,16 @@ class Program
 
         #endregion
 
+
+        #region Q8
+
+        int d;
+        d = Convert.ToInt32(!(30 < 20)); // A value 1 will be assigned to d.
+
+        Console.WriteLine(d);
+
+        #endregion
+
     }
 
     class Person
