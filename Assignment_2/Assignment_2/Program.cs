@@ -73,6 +73,21 @@ class Program
 
         #endregion
 
+
+        #region Q5
+
+        Console.Write("Enter a character: ");
+        char ch = char.Parse(Console.ReadLine());
+
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            Console.WriteLine("vowel");
+        else
+            Console.WriteLine("Consonant");
+
+
+        #endregion
+
+
     }
 
     static int TakeValidInteger()
