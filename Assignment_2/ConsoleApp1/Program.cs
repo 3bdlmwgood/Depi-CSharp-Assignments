@@ -18,5 +18,16 @@ class Program
         Console.WriteLine($"Entered Number is [ {number} ]");
 
         #endregion
+
+
+        #region Q2
+
+        string str = "Abdlallah12345";
+
+        int num = Convert.ToInt32(str);
+
+        Console.WriteLine(num); // This will throw a FormatException because the string cannot be converted to an integer.
+
+        #endregion
     }
 }
