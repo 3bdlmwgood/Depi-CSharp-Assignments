@@ -41,5 +41,16 @@ class Program
         Console.WriteLine(sum); // This will output the sum of the two float numbers.
 
         #endregion
+
+
+        #region Q4
+
+        string Name = "Abdallah Mohamed";
+
+        string substring = Name.Substring(0, 8);
+
+        Console.WriteLine(substring); // This will output the first 8 characters of the string.
+
+        #endregion
     }
 }
