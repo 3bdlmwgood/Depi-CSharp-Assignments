@@ -521,6 +521,42 @@ class Program
         #endregion
 
 
+        #region Q25
+
+        int intArraySize = TakeValidInteger("Enter Array Size : ");
+
+        int[] intArray = new int[intArraySize];
+
+
+
+        for (int i = 0; i < intArraySize; i++)
+        {
+            intArray[i] = TakeValidInteger($"Enter element {i + 1}: ");
+        }
+
+        int maxDistance = 0;
+
+        for (int i = 0; i < intArraySize; i++)
+        {
+            for (int j = i + 1; j < intArraySize; j++)
+            {
+                if (intArray[i] == intArray[j])
+                {
+                    int distance = j - i - 1;
+
+                    if (distance > maxDistance)
+                    {
+                        maxDistance = distance;
+                    }
+                }
+            }
+        }
+
+        Console.WriteLine($"Longest distance = {maxDistance}");
+
+        #endregion
+
+
 
 
     }
