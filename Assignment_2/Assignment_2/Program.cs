@@ -322,6 +322,39 @@ class Program
             Console.WriteLine("The points are not lie on a single straight line.");
 
         #endregion
+
+
+        #region Q18
+
+        Console.Write("Enter time taken: ");
+        double hours = double.Parse(Console.ReadLine());
+
+        if (hours >= 2 && hours <= 3)
+        {
+            Console.WriteLine("Highly efficient");
+        }
+        else if (hours > 3 && hours <= 4)
+        {
+            Console.WriteLine("Increase your speed");
+        }
+        else if (hours > 4 && hours <= 5)
+        {
+            Console.WriteLine("Training is required");
+        }
+        else if (hours > 5)
+        {
+            Console.WriteLine("You have to leave the company");
+        }
+        else
+        {
+            Console.WriteLine("Invalid time");
+        }
+
+        #endregion
+
+
+        
+
     }
 
     static int TakeValidInteger()
